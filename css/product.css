@@ -1,0 +1,177 @@
+
+
+/********* Products  *******/
+
+
+
+.product img{ 
+  text-align: center;}
+.product{ 
+  float: left;
+  border: solid 1px #cfcfcf;
+  width: 194px;
+  margin-left: 18px;
+  padding: 15px;
+  margin-top: 1%;
+  position: relative;
+  }
+.tabs-menu {
+  overflow: auto;
+  width: 960px;
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  clear: both;
+}
+.tabs-menu li {
+margin: 0;
+padding: 0;
+float: left;
+}
+.tabs-menu li.current {
+position: relative;
+background-color: #fff;
+z-index: 5;
+}
+
+.tabs-menu li a {
+box-shadow: -2px 0 0 rgba(0, 0, 0, .2);
+background: #BD222B;
+background: linear-gradient(42deg, transparent 17px, #BD222B 19px);
+color: #fff;
+float: left;
+font: bold 1em/2.2em  "Montserrat", Arial, Helvetica;
+height: 35px;
+padding: 0 40px;
+text-decoration: none;
+border-radius: 3px;
+}
+.tabs-menu li a:hover{
+ background: #c93434;
+ color: #000;    
+ background: linear-gradient(218deg, transparent 17px, #22bdb4 20px);
+ -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.tabs-menu li a:focus{
+  outline: 0 ;
+}
+.tabs-menu .current a {
+  background: #fff;
+  text-shadow: none;    
+  color: #333;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 1), 
+    4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.tab {
+  height: auto;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 2px 10px #000, 0 -1px 0 #fff inset;
+  padding: 10px 10px;
+  width: 980px;
+  margin: 0 auto 3%;
+  overflow: hidden;
+  background: rgba(179, 204, 204, 0.4);
+}
+.tab-content {
+  padding: 0;
+  display: none;
+}
+#tab-1 {
+ display: block;   
+}   
+  
+  /* ===========================
+      Media Queries
+============================== */
+
+
+/* Tablet 960px
+============================== */
+
+@media screen and (max-width: 960px) and (min-width: 768px){
+   
+   body{
+    width: 100%;
+  }
+.tab{
+  width: 95%;
+  padding:0;
+  margin-bottom:3%;
+  }
+ .product{
+  margin-left: 2%;
+    min-width: 26.5%;
+ }
+ .itemImage{
+  width: 100%;
+  height: auto;
+ }
+}
+/* Mobile Landscape 768px
+============================== */
+  @media screen and (max-width: 768px) and (min-width: 600px) {
+   body{
+    width:100%;
+   }
+   .tab{
+  width: 95%;
+  padding:0;
+  margin-bottom:3%;
+  }
+  .tabs-menu {
+    width: 100%;
+  }
+  .tabs-menu li{
+    width:auto;
+  }
+ .product{
+  margin-left: 2%;
+  width: 25.5%;
+ }
+ .itemImage{
+  width: 100%;
+  height: auto;
+ }
+}
+
+/* Mobile Landscape 599px
+============================== */
+ @media screen and (max-width: 599px) and (min-width: 400px) {
+  
+  body{
+    width:100%;
+   }
+   .tab{
+  width: 95%;
+  padding:0;
+  margin-bottom:3%;
+  }
+  .tabs-menu {
+    width: 100%;
+  }
+  .tabs-menu li{
+    width:auto;
+  }
+.tabs-menu li a {
+  font-weight: bold ;
+  font-size: 0.9em;
+  padding: 0px 34px;
+  height:1.8em;
+  }
+button.btnAdd{
+  width: 100%;
+  margin: 0;
+}
+.product{
+  margin-left: 2%;
+  width: 39%;
+ }
+ .itemImage{
+  width: 100%;
+  height: auto;
+ }
+}
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <title>All City</title>
+        <meta charset="UTF-8">
+        <meta name="description" content=" All City Shop-Sprays,Records,Music,Vynils,Markers located in Dublin Temple Bar.Best prices for everyone.">
+         <meta name="keywords" content="All City, Grafitti,Art,Music,Records,Vynil,Spraypaint packs,Street Competition images, Grafitti Competition,Music giggs, Music Festival,Sale,Summer art, Dublin Grafitti Shop">
+         <meta name="author" content="Peter Striz">              
+         <link rel="stylesheet" href="css/reset.css" type="text/css" >
+         <link rel="stylesheet" href="css/master.css" type="text/css" >
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  </head>
+  <!-------  body   -------->
+   
+  <body>
+    <div id="main">
+      <!----  Contact page, logo, navbar, shoppingcart ---->
+      <div class="contactPage left">
+            <div class="fixed navmenu left">
+                <div class="logo left">
+                      <a href="index.html"><img src="css/images/logo.png" alt="logo" /></a>
+                </div>          
+                <nav class="right">
+                    <div class="hamburger">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                </div>
+                 <ul class="menu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="index.html#about">About Us</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li class="active"><a href="contactus.html">Contact Us</a></li>
+                 </ul>
+               </nav>
+                       <div class="cart-container">    
+                           <div id="cart">                 
+                            <i class="fa fa-shopping-cart fa-2x openCloseCart cartMobile shopCart" aria-hidden="true"></i>
+                             <button id="emptyCart" class="empty">Empty Cart</button>
+                            </div>                        
+                           <div class="productCount"><span id="itemCount"></span></div>
+                        </div>
+             </div> 
+               <div id="shoppingCart">
+                    <div id="cartItemsContainer">
+                      <h2>Items in your cart</h2>
+                      <i class="fa fa-times-circle-o fa-3x openCloseCart" aria-hidden="true"></i>
+                      <div id="cartItems"></div>
+                      <span id="cartTotal"></span>
+                    </div>
+                  </div>     
+      </div>
+      <!-------- map ------------>
+
+       <div class="map left">
+           <div id="googleMap">
+          </div>
+       </div>
+      <!--------   contact form -------->
+
+      <div class="contactForm left">
+              <div class="lefttalk">
+                    <h3>Talk to Us</h3>
+                    <h4> Address </h4>
+                    <p class="contact">4 Crow St, Dublin 2 <br>
+                    Ireland</p>
+                    <h4>Work-times</h4>
+                    <p class="contact">Monday - Friday: 9am-6pm
+                  Saturday: Closed<br>
+                  Sunday: Closed</p>
+                    <h4>Phone</h4>
+                    <p class="contact">+353 (01) 677 2994</p>
+              </div>
+           <div class="rightform">
+              <input name="name" type="text" class="feedback-input marginTop" placeholder="Name" />   
+              <input name="email" type="text" class="feedback-input" placeholder="Email" />
+              <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+              <input type="submit" value="Send"/>
+           </div>
+      </div>
+      
+       <!---- Footer   ---->
+  <footer>
+         <div class="logoFooter left mobileLogo">
+              <img src="css/images/logo.png" alt="logo" />
+              <p><strong>ALL CITY</strong></p></div>
+              <div class="contactDetail left"> 
+              <div class="adres left"> <h3>Address</h3> 
+              <p> 4 Crow St, Dublin 2<br> Temple Bar<br> Dublin 1</p>
+              <div class="clear"></div></div>
+              <div class="phone left"> 
+              <h3>Phone</h3> 
+              <p>+353 (01) 677 2994</p> </div>
+             </div>
+        <div class="icon right mobicon">
+          <a href="index.html"><i class="fa fa-facebook-square"></i></a>
+          <a href="index.html"><i class="fa fa-envelope"></i></a>
+          <a href="index.html"><i class="fa fa-twitter-square"></i></a>
+         </div>
+         <p class="copyright left">Copyright 2016</p>  
+      </footer>
+</div>
+    <script src="scripts/jquery-2.2.2.js"></script>
+    <script src="scripts/myscripts.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+var myCenter=new google.maps.LatLng(53.3445787,-6.265893,17);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+$( document ).ready(function() {
+    $('#googleMap').addClass('scrollof');
+    $('.map').on('click', function() {
+      $('#googleMap').removeClass('scrollof');
+    });
+    $( "#googleMap" ).mouseleave(function() {
+       $('#googleMap').addClass('scrollof');
+    });
+
+});
+    </script>
+  </body>
+</html>

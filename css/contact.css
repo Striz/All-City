@@ -1,0 +1,113 @@
+
+/************** styling website ****************/
+
+
+/********* map   *******/
+
+
+
+
+/*********  contact form   
+
+.contactForm {
+  width: 100%;
+  margin: 0 auto;
+  height: 380px;
+}
+.contactForm  .lefttalk h3{ 
+width:220px;
+margin: 0 auto;
+font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+.contactForm  .lefttalk h4{
+  width:250px;
+  margin: 0 auto;
+     font-weight: bold;
+    font-style: normal;
+  padding-top: 20px;
+  text-align:center;
+}
+.contact{
+  width:250px;
+margin: 0 auto;
+text-align: center;
+  }
+
+.lefttalk{
+  width: 45%;
+  height: 340px;
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background: ;
+  margin-left: 5%;
+}
+.rightform{
+  width: 45%;
+  height: 340px;
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-right: 5%;
+  background: #f0f5f5;
+}
+
+.marginTop{
+  margin-top: 4%;
+}
+.feedback-input {
+  width:75%;
+  color: #000;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 0;
+  transition: all 0.6s;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 12%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 110px;
+  line-height: 150%;
+  resize: horizontal;
+  outline:0;
+  border:0;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 75%;
+  background: #D2DEE2;
+  border-radius:7px;
+  border:0;
+  cursor:pointer;
+  color: #000;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.5s;
+  margin-left:12%;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+  background:#72D3F3; 
+  color: #000;
+  transition: all 0.5s;
+
+} *******/
+
+
+
